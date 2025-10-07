@@ -1,0 +1,136 @@
+/* সকল Element এর জন্য প্রাথমিক স্টাইল সেট করা */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* হালকা ধূসর ব্যাকগ্রাউন্ড */
+}
+
+/* 1. Top Bar Style */
+.topbar {
+    background-color: #8B4513; /* ব্রাউন কালার */
+    height: 15px;
+    width: 100%;
+}
+
+/* 2. Main Header Style */
+.main-header {
+    background-color: #0000FF; /* উজ্জ্বল নীল */
+    color: white;
+    padding: 20px;
+    padding-left: 15px;
+    height: 100px; /* উচ্চতা সেট করা হলো */
+}
+
+.main-header h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.main-header p {
+    font-size: 16px;
+}
+
+/* 3. Navigation Bar Style */
+.navbar {
+    background-color: #f8f8f8; /* হালকা ধূসর */
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+    padding-left: 15px;
+}
+
+.navbar a {
+    color: #008000; /* সবুজ রং */
+    text-decoration: none;
+    padding: 0 15px 0 0;
+    font-weight: bold;
+}
+
+/* 4. Main Content Area Style */
+.main-content-area {
+    width: 96%; /* কনটেন্ট এর প্রস্থ */
+    margin: 20px auto; /* উপরে-নিচে 20px মার্জিন, ডানে-বামে অটো-সেন্টার */
+    display: flex; /* Sidebar এবং Content-কে পাশাপাশি আনার জন্য */
+    gap: 20px; /* দুটি কলামের মধ্যে দূরত্ব */
+}
+
+/* Sidebar Style */
+.sidebar {
+    width: 200px;
+    background-color: #ccc; /* ধূসর ব্যাকগ্রাউন্ড */
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* হালকা শ্যাডো */
+}
+
+.side-menu {
+    list-style: none; /* বুলেট পয়েন্ট অপসারণ */
+    margin-bottom: 20px;
+}
+
+.side-menu li {
+    background-color: #e0e0e0; /* মেনু আইটেমের ব্যাকগ্রাউন্ড */
+    margin-bottom: 1px;
+    border: 1px solid #c0c0c0;
+}
+
+.side-menu li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #008000; /* সবুজ রং */
+}
+
+.side-menu li:hover {
+    background-color: #cccccc; /* হোভার ইফেক্ট */
+}
+
+/* Search Box Style */
+.search-box {
+    padding: 10px;
+    background-color: #e0e0e0; /* সার্চ বক্সের ব্যাকগ্রাউন্ড */
+    display: flex;
+    border: 1px solid #c0c0c0;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.search-box input[type="text"] {
+    padding: 5px;
+    border: 1px solid #aaa;
+    flex-grow: 1; /* ইনপুট ফিল্ডকে বড় করা */
+}
+
+.search-box button {
+    padding: 5px 10px;
+    background-color: #ccc;
+    border: 1px solid #aaa;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+/* Content (Right Column) Style */
+.content {
+    flex-grow: 1; /* বাকী সব জায়গা নিয়ে নেবে */
+    padding: 10px;
+}
+
+.content-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+}
+
+/* 5. Footer Style */
+.footer {
+    background-color: #0000FF; /* উজ্জ্বল নীল */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed; /* ফুটোরকে নিচে ফিক্সড রাখা */
+    bottom: 0;
+    width: 100%;
+}

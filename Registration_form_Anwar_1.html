@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body {
+            background-color: #f0f4f8; 
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center; 
+            align-items: flex-start; 
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .form-container {
+            width: 100%;
+            max-width: 500px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; 
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+        h3 {
+            text-align: center;
+            color: #004085;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+        textarea {
+            resize: vertical; 
+        }
+
+             .radio-group p {
+            font-weight: bold;
+            color: #333;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        .radio-group label {
+            display: inline-block;
+            font-weight: normal;
+            margin-right: 15px;
+        }
+        
+        
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            background-color: #004085; 
+            color: white;
+            font-size: 1.1em;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+        h2{
+            text-align: center;
+            color: green;
+            margin-bottom: 12px;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>IsDB-BISEW IT Scholarship Program</h2>
+        <h3>Registration Form</h3>
+        <form action="" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="user_name" placeholder="Enter Your Name">
+            <label for="id_no">ID NO.</label>
+            <input type="text" id="id_no" name="user_id" placeholder="Enter Your ID No">
+            <label for="phone_num">Phone NO.</label>
+            <input type="text" id="phone_num" name="user_phone" placeholder="Enter Your Phone Num">
+            <label for="e-mail">E-mail</label>
+            <input type="text" id="e-mail" name="user_e-mail" placeholder="Enter Your E-mail">
+
+            <select name="Round" id="">
+            <option value="PWD67">PWD67</option>
+            <option value="PWD68">PWD68</option>
+        </select>
+
+            <div class="radio-group">
+                <p>(Gender):</p>
+                <input type="radio" id="male" name="gender" value="male" checked>
+                <label for="male">(Male)</label>
+                
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">(Female)</label>
+            </div>
+               <label for="address">(Address):</label>
+            <textarea id="address" name="user_address" placeholder="Enter Your Address" rows="4"></textarea>
+            
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
+
+
+        </form>
+    </div>
+</body>
+</html>
