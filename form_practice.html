@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .centre{
+            height: 100dvh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+      
+       
+    </style>
+</head>
+<body>
+    <div class="centre">
+        <form action="">
+    <h3>Student Registration Form</h3>
+    Roll No: 
+    <input type="text" name="id" placeholder="Enter your id"> <br>
+    Student Name : <br>
+    <input type="text" name="student name" placeholder="Enter your name"> <br>
+    Father's Name: <br>
+    <input type="text" name="father's name" placeholder="Enter your name"> <br>
+    Date of Birth: <br>
+    <input type="date"> <br>
+    Mobile No: <br>
+    <input type="text" name="Mobile name"> <br>
+    E-mail id: <br>
+    <input type="text" name="E-mail" placeholder="Enter your E-mail"> <br>
+    Password: <br>
+    <input type="text" name="Password" placeholder="Enter your name"> <br>
+    Gender: <br>
+    <input type="radio" name="Gender" value="male">Male <br>
+    <input type="radio" name="Gender" value="female">Female <br>
+     <div class="form-group department">
+        <label>Department:</label><br>
+        <label><input type="checkbox" name="department" value="CSE" onchange="onDeptClick()"> CSE</label>
+        <label><input type="checkbox" name="department" value="EEE" onchange="onDeptClick()"> EEE</label>
+        <label><input type="checkbox" name="department" value="CE" onchange="onDeptClick()"> CE</label>
+        <label><input type="checkbox" name="department" value="ME" onchange="onDeptClick()"> ME</label>
+        <label><input type="checkbox" name="department" value="BBA" onchange="onDeptClick()"> BBA</label>
+      </div>
+    
+
+    Course: <br>
+     <select name="Round" id="">
+            <option value="PWD67">PWD67</option>
+            <option value="PWD68">PWD68</option>
+        </select> <br>
+
+    Student photo: <br>
+    <img src="fi" alt="">
+    City: <br>
+    <input type="text" name="city" > <br>
+    Address : <br>
+    <textarea name="Address" id="" placeholder="Enter your address"></textarea> <br>
+    <button type="button">Submit</button>
+</form>
+    </div>
+</body>
+</html>
