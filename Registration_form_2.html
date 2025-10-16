@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Registration Form</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center; /* horizontally center */
+            align-items: center;     /* vertically center */
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            padding: 20px 30px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h3 {
+            text-align: center;
+        }
+
+        input[type="text"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0 15px 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 8px 16px;
+            margin-right: 10px;
+        }
+
+        label {
+            display: inline-block;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+        
+
+    <div class="form-container">
+        
+
+        <form action="">
+            <h3>Registration Form</h3>
+
+            ID: <br>
+            <input type="text" name="ID" placeholder="Enter your id"> <br>
+
+            Name: <br>
+            <textarea name="text" id="name" placeholder="Enter your name"></textarea> <br>
+
+            Round: <br>
+            <select name="Round" id="">
+                <option value="PWD67">PWD67</option>
+                <option value="PWD68">PWD68</option>
+            </select> <br>
+
+            Gender: <br>
+            <input type="radio" name="Gender" value="male"> Male
+            <input type="radio" name="Gender" value="female"> Female <br><br>
+
+            Department: <br>
+            <label><input type="checkbox" name="department" value="CSE" onchange="onDeptClick()"> SSC</label>
+            <label><input type="checkbox" name="department" value="EEE" onchange="onDeptClick()"> HCS</label> <br><br>
+
+            <button type="button">Submit</button>
+            <button type="button">Reset</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
